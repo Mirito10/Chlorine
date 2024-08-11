@@ -1,0 +1,42 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chlorine.Menu.MenuJuegos.MenuDeJuegos"
+             BackgroundColor="Black"
+             Title="Juegos"
+             NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20" Padding="30">
+        <Label Text="Juegos"
+               FontSize="32"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <Button Text="SpaceShips"
+                ImageSource="spaceship_image.png"
+                BackgroundColor="White"
+                TextColor="Black"
+                WidthRequest="250"
+                HeightRequest="100"
+                CornerRadius="25"
+                HorizontalOptions="Center" />
+
+        <Button Text="Futbolito"
+                ImageSource="soccerball_image.png"
+                BackgroundColor="White"
+                TextColor="Black"
+                WidthRequest="250"
+                HeightRequest="100"
+                CornerRadius="25"
+                HorizontalOptions="Center" />
+
+        <Button Text="Volver al Menú Principal"
+                BackgroundColor="#FFA31a"
+                TextColor="White"
+                WidthRequest="200"
+                HeightRequest="50"
+                CornerRadius="25"
+                Clicked="OnVolverAlMenuPrincipalClicked"
+                HorizontalOptions="Center"
+                Margin="20,40,20,0" />
+    </VerticalStackLayout>
+</ContentPage>

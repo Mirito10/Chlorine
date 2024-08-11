@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chlorine.Menu.MenuPrincipal.MenuPrincipal"
+             BackgroundColor="#1b1b1b"
+             Title="MenuPrincipal"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+        <Button Text="Menú de Juegos"
+            BackgroundColor="White"
+            TextColor="Black"
+            WidthRequest="200"
+            HeightRequest="50"
+            CornerRadius="25"
+            Clicked="BotonAMenuJuegos"/>
+
+        <Button Text="Estadísticas"
+            BackgroundColor="#FFA31a"
+            TextColor="White"
+            WidthRequest="200"
+            HeightRequest="50"
+            CornerRadius="25"/>
+
+        <Button Text="Opciones"
+            BackgroundColor="White"
+            TextColor="Black"
+            WidthRequest="200"
+            HeightRequest="50"
+            CornerRadius="25"/>
+
+        <Button Text="Salir"
+            BackgroundColor="#FFA31a"
+            TextColor="White"
+            WidthRequest="200"
+            HeightRequest="50"
+            CornerRadius="25"
+            Clicked="OnSalirClicked"/>
+    </StackLayout>
+</ContentPage>

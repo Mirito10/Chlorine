@@ -1,0 +1,98 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="Chlorine.RegistroLogin.Registro.Registro"
+             BackgroundColor="#1b1b1b"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20" Padding="100">
+
+            <Label Text="Registro"
+                   FontSize="32"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+
+            <Frame BackgroundColor="Gray"
+                   WidthRequest="120"
+                   HeightRequest="120"
+                   CornerRadius="60"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <ImageButton Source="default_profile.png"
+                             BackgroundColor="Transparent"
+                             Clicked="OnProfilePictureClicked"
+                             Aspect="AspectFill" />
+            </Frame>
+
+            <Label Text="Correo electrónico:"
+                   TextColor="White"
+                   FontSize="14" />
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BackgroundColor="Gray">
+                <Entry Placeholder="Correo electrónico"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       FontSize="18" />
+            </Frame>
+
+            <Label Text="Nombre de Usuario:"
+                   TextColor="White"
+                   FontSize="14" />
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BackgroundColor="Gray">
+                <Entry Placeholder="Usuario"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       FontSize="18" />
+            </Frame>
+
+            <Label Text="Fecha de Nacimiento:"
+                   TextColor="White"
+                   FontSize="14" />
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BackgroundColor="Gray">
+                <DatePicker x:Name="datePickerFechaNacimiento"
+                            MinimumDate="01/01/1900"
+                            MaximumDate="{x:Static sys:DateTime.Now}"
+                            Format="D"
+                            BackgroundColor="Transparent"
+                            TextColor="White" />
+            </Frame>
+
+            <Label Text="Contraseña:"
+                   TextColor="White"
+                   FontSize="14" />
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BackgroundColor="Gray">
+                <Entry Placeholder="Contraseña"
+                       IsPassword="True"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       FontSize="18" />
+            </Frame>
+
+            <Label Text="Confirmar contraseña:"
+                   TextColor="White"
+                   FontSize="14" />
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BackgroundColor="Gray">
+                <Entry Placeholder="Confirmar contraseña"
+                       IsPassword="True"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       FontSize="18" />
+            </Frame>
+
+            <Button Text="REGISTRARSE"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    HorizontalOptions="Center" />
+
+            <Button Text="Volver al Login"
+                    BackgroundColor="#ffa31a"
+                    TextColor="White"
+                    CornerRadius="25"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Clicked="OnVolverAlLoginClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
